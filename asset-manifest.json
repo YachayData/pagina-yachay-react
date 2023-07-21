@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pagina-yachay-react/static/css/main.5bae4181.css",
+    "main.js": "/pagina-yachay-react/static/js/main.33b9ca4e.js",
+    "static/js/787.b701888c.chunk.js": "/pagina-yachay-react/static/js/787.b701888c.chunk.js",
+    "index.html": "/pagina-yachay-react/index.html",
+    "main.5bae4181.css.map": "/pagina-yachay-react/static/css/main.5bae4181.css.map",
+    "main.33b9ca4e.js.map": "/pagina-yachay-react/static/js/main.33b9ca4e.js.map",
+    "787.b701888c.chunk.js.map": "/pagina-yachay-react/static/js/787.b701888c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bae4181.css",
+    "static/js/main.33b9ca4e.js"
+  ]
+}
