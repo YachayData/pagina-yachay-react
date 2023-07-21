@@ -1,0 +1,15 @@
+.SocialButton {
+    /* margin: 0; */
+    margin-right: 10px !important;
+    box-sizing: border-box ;
+
+    display:block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50% !important;
+
+    /* margin: 0 10px; */
+    /* width: 30px;
+    height: 30px; */
+    background-color: #333333 !important;
+  }
