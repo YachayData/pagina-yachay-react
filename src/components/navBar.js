@@ -3,7 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
+// import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
@@ -13,7 +13,13 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 // import AdbIcon from '@mui/icons-material/Adb';
 
+import '../styles/navBar.css';
+
 import CardMedia from '@mui/material/CardMedia';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+
 
 const pages = ['Products', 'Pricing', 'Blog'];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -90,7 +96,8 @@ function NavBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <InstagramIcon/>
+                  {/* <Typography textAlign="center">{page}</Typography> */}
                 </MenuItem>
               ))}
             </Menu>
@@ -115,19 +122,34 @@ function NavBar() {
             YACHAY DATA
           </Typography> */}
           
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
+          <Box sx={{ flexGrow: .40, my:2, display: { xs: 'none', md: 'flex' } }}>
+              <Button href="https://www.facebook.com/yachaydata" className="SocialButton">
+                <FacebookIcon sx={{ 
+                  ":hover": {
+                    color:"#1877F2" 
+                  },
+                  color: "white"
+                  }}/>
               </Button>
-            ))}
+              <Button href="https://twitter.com/yachaydata" className="SocialButton">
+                <TwitterIcon sx={{ 
+                  ":hover": {
+                    color:"#1DA1F2"
+                  },
+                  color: "white"
+                  }}/>
+              </Button>
+              <Button href="https://www.instagram.com/yachaydata/" className="SocialButton">
+                <InstagramIcon sx={{ 
+                  ":hover": {
+                    color:"#E1306C"
+                  },
+                  color: "white"
+                  }}/>
+              </Button>
           </Box>
-
-          <Box style={{ background: "red", textAlign: "center"}}>
+          
+          <Box style={{ background: "transparent", textAlign: "center"}}>
             <CardMedia
                     style={{ width: 180, height: 60 }}
                     image="https://www.yachaydata.cl/wp-content/uploads/2021/02/a3-2.png"
