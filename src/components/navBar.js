@@ -20,11 +20,14 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const pages = ['Products', 'Pricing', 'Blog'];
-// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function NavBar() {
+  let navigate = useNavigate();
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 //   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -42,6 +45,11 @@ function NavBar() {
 //   const handleCloseUserMenu = () => {
 //     setAnchorElUser(null);
 //   };
+
+  const routeChange = () => {
+    let path = "post/1"
+    navigate(path);
+  }
 
   return (
     <AppBar position="fixed" style={{ background: "#0F0F0F"}}>
@@ -149,14 +157,15 @@ function NavBar() {
               </Button>
           </Box>
           
-          <Box style={{ background: "transparent", textAlign: "center"}}>
-            <CardMedia
-                    style={{ width: 180, height: 60 }}
-                    image="https://www.yachaydata.cl/wp-content/uploads/2021/02/a3-2.png"
-                    title="Yachay data logo"
-                />
-
-          </Box>
+          <Link to="/">
+            <Box style={{ background: "green", textAlign: "center"}}>
+              <CardMedia
+                      style={{ width: 180, height: 60 }}
+                      image="https://www.yachaydata.cl/wp-content/uploads/2021/02/a3-2.png"
+                      title="Yachay data logo"
+                  />
+            </Box>
+          </Link>
 
           {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">

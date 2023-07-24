@@ -1,11 +1,11 @@
-import PostPreview from './postPreview';
+import PostPreview from '../components/postPreview';
 import '../styles/home.css';
 import { Box } from '@mui/material';
 
-
-const { postArray } = require('../db/data');
+const {postArray} = require('../db/data');
 
 function Home () {
+
     return (
         <div className="Home">
             <h1>Home Page</h1>
